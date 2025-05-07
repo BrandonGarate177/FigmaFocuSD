@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import MainLayout from './layout/MainLayout';
+import './styles/figma.css';
 
 const App = () => {
   return (
