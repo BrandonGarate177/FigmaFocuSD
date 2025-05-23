@@ -1,14 +1,16 @@
 import React from 'react';
-import textLogo from '../assets/text_logo.svg';
+import document from '../assets/document.svg';
+
+// ToDO: 
+// Make the buttons useful
 
 export default function Navbar() {
   return (
-    <nav className="w-full h-20 relative flex justify-between items-center px-10 bg-gradient-to-r from-[#1A1A1A] to-[#1F1F2B] font-['Inter']">
-      {/* Left: Logo */}
+    <nav className="w-full h-16 relative flex justify-between items-center px-10 bg-gradient-to-r from-[#1A1A1A] to-[#1F1F2B] font-['Inter']">
       <div className="w-32 h-9 relative">
         
         {/* TASK: INCREASE LOGO SIZE */}
-        <img src={textLogo} alt="Focus3D Logo" className="h-full w-auto" />
+        <img src={document} alt="Focus3D Logo" className="h-full w-auto object-contain" />
       </div>
 
       {/* Center: Navigation Links */}
