@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactUs() {
   return (
-    <div className="w-full h-[768px] font-inter text-white flex items-center justify-center px-4">
+    <div className="w-full font-inter text-white flex items-center justify-center px-4 py-12 sm:py-20">
       <div className="max-w-[1056px] w-full text-center space-y-10">
         {/* Title */}
         <h2 className="text-6xl font-medium leading-[78px]">Contact Us</h2>

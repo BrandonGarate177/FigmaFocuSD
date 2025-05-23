@@ -16,24 +16,26 @@ import lightRay3 from '../assets/lightRay3.svg';
 export default function Main() {
   return (
     <div className="relative flex flex-col min-h-screen">
-      {/* Background decorative elements with fixed positioning */}
-
-
       <TopBar className="z-20 relative" />
 
-      <main className="flex-1 bg-gradient-to-r from-[#1A1A1A] to-[#1F1F2B] z-10 relative bg-opacity-90">
-        <section id="hero" className="scroll-mt-16">
-          <HeroPage />
-        </section>
-        <section id="about" className="scroll-mt-16">
+      <main className="container mx-auto px-4 sm:px-0 relative">
+        {/* hide giant blobs on mobile */}
+        <img src={blob1} className="hidden lg:block absolute top-[130vh] left-3/4 w-[150vw] -translate-x-1/2 opacity-100" />
+        <img src={blob2} className="hidden lg:block absolute top-[-700px] left-3/4 w-[100vw] -translate-x-1/2 opacity-100" />
+
+        <section id="hero" className="scroll-mt-16 z-10"><HeroPage /></section>
+
+        <section id="about" className="relative scroll-mt-16 w-full overflow-visible z-30">
+          <div className="absolute inset-0 pointer-events-none -z-10">
+            <img src={lightRay1} className="hidden sm:block absolute top-[200px] left-[-260px] w-screen h-auto rotate-1" />
+            <img src={lightRay2} className="hidden sm:block absolute top-[210px] left-[-400px] w-screen h-auto rotate-4" />
+            <img src={lightRay3} className="hidden sm:block absolute top-[210px] left-[-80px] w-screen h-auto rotate-4" />
+          </div>
           <AboutUs />
         </section>
-        <section id="features" className="scroll-mt-16">
-          <Filler />
-        </section>
-        <section id="contact" className="scroll-mt-16">
-          <ContactUs />
-        </section>
+
+        <section id="features" className="scroll-mt-16 z-10"><Filler /></section>
+        <section id="contact" className="scroll-mt-16 z-10"><ContactUs /></section>
       </main>
 
       <Footer className="z-10 relative" />
