@@ -1,5 +1,6 @@
-import react from 'react';
-import TopBar from '../sections/TopBar.jsx';
+import React from 'react';
+import TopBar from '../components/topBar';
+
 export default function Main() {
     return (
         // here is where we are going to display the sections of the website
