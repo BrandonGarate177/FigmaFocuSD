@@ -3,11 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 html,
 body {
   @apply bg-gradient-to-r from-[#1A1A1A] to-[#1F1F2B];
 }
+
+.container {
+  max-width: 1200px;
+}
+
+/* Add any app-specific styles here */

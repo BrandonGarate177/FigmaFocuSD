@@ -19,19 +19,36 @@ export default function Filler() {
           In a world of growing distractions, we created the ultimate Focus tool.
         </h2>
 
-        <button className="group flex items-center gap-4 text-base sm:text-lg">
-          {/* Gradient Line */}
+        <button className="group flex flex-col items-start gap-2 text-base sm:text-lg transition-all duration-300">
+          <div className="flex items-center gap-4 group-hover:gap-5 transition-all duration-300">
+            {/* Learn More Text */}
+            <span className="font-normal leading-loose group-hover:underline transition-all duration-300">
+              Learn more
+            </span>
+
+            {/* Gradient Arrow */}
+            <span className="w-5 h-5 flex items-center justify-center group-hover:translate-x-1 transition-all duration-300">
+              <svg
+                className="w-4 h-4 fill-current"
+                viewBox="0 0 16 16"
+              >
+                <defs>
+                  <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#6366f1" />
+                    <stop offset="50%" stopColor="#60a5fa" />
+                    <stop offset="100%" stopColor="#fb923c" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M8.293 3.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L10.586 9H3a1 1 0 110-2h7.586L8.293 4.707a1 1 0 010-1.414z"
+                  fill="url(#arrowGradient)"
+                />
+              </svg>
+            </span>
+          </div>
+
+          {/* Gradient Line - under the text */}
           <span className="w-24 h-0.5 bg-gradient-to-br from-indigo-500 via-blue-400 to-orange-300 group-hover:w-32 transition-all duration-300" />
-
-          {/* Learn More Text */}
-          <span className="font-normal leading-loose group-hover:underline">
-            Learn more
-          </span>
-
-          {/* Gradient Arrow */}
-          <span className="w-5 h-5 flex items-center justify-center">
-            <div className="w-5 h-4 bg-gradient-to-br from-indigo-500 via-blue-400 to-orange-300 transform rotate-45" />
-          </span>
         </button>
       </div>
     </div>

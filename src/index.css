@@ -3,11 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 html,
 body {
   @apply bg-gradient-to-r from-[#1A1A1A] to-[#1F1F2B];
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-in-out;
 }
