@@ -1,5 +1,5 @@
 import React from 'react';
-import Frame1 from '../assets/Frame1.svg';
+import LightBulbLogo from '../assets/LightBulbLogo.svg';
 
 export default function Filler() {
   return (
@@ -7,9 +7,9 @@ export default function Filler() {
       {/* Left Visuals - SVG Art */}
       <div className="w-full sm:w-1/2 flex justify-center items-center px-4 sm:px-6">
         <img
-          src={Frame1}
+          src={LightBulbLogo}
           alt="Decorative SVG Blocks"
-          className="w-full sm:w-[530px] h-auto object-contain"
+          className="w-[280px] xs:w-[320px] sm:w-[380px] md:w-[450px] lg:w-[530px] h-auto object-contain transition-all duration-300"
         />
       </div>
 
