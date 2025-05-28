@@ -41,7 +41,7 @@ export default function Main() {
           */}
           <img
             src={lightRay1}
-            className="absolute top-[650px] sm:top-[400px] md:top-[700px] lg:top-[800px] left-[-65px] sm:left-[-260px] w-[200vw] sm:w-[120vw] h-auto rotate-2"
+            className="absolute top-[650px] sm:top-[800px] md:top-[700px] lg:top-[800px] left-[-65px] sm:left-[-250px] w-[200vw] sm:w-[120vw] h-auto rotate-2"
             alt=""
             style={{
               /* For more precise control, uncomment and modify these values:
@@ -57,7 +57,7 @@ export default function Main() {
           */}
           <img
             src={lightRay2}
-            className="absolute top-[755px] sm:top-[410px] md:top-[710px] lg:top-[810px] left-[20px] sm:left-[-400px] w-[150vw] sm:w-[120vw] h-auto rotate-20"
+            className="absolute top-[755px] sm:top-[980px] md:top-[710px] lg:top-[1190px] left-[20px] sm:left-[30px] w-[150vw] sm:w-[120vw] h-auto rotate-20"
             alt=""
             style={{
               //  For more precise control, uncomment and modify these values:
@@ -73,7 +73,7 @@ export default function Main() {
           */}
           <img
             src={lightRay3}
-            className="absolute top-[655px] sm:top-[410px] md:top-[710px] lg:top-[810px] left-[-35px] sm:left-[-80px] w-[150vw] sm:w-[120vw] h-auto rotate-4"
+            className="absolute top-[655px] sm:top-[810px] md:top-[710px] lg:top-[810px] left-[-35px] sm:left-[-80px] w-[150vw] sm:w-[120vw] h-auto rotate-4"
             alt=""
             style={{
               /* For more precise control, uncomment and modify these values:
